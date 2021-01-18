@@ -1,0 +1,45 @@
+This is README file for Algorithm PA#1
+Author: 孟妍b06901066
+Date:108/10/12
+=====
+SYNOPSIS:
+
+mysort -[IS|MS|QS|HS] <input_file_name> <output_file_name>
+
+This program supports four different sorting methods: insertion sort, merge sort, quick sort and heap sort.
+=====
+DIRECTORY:
+
+bin/	  executable binary
+doc/	  reports
+inputs/   input data (unsorted)
+outputs/  output result (sorted)
+lib/	  library
+src/ 	  source C++ codes
+utility/  checker
+======
+HOW TO COMPILE:
+
+Then compile the demo, simply follow the following steps
+	make
+======
+HOW TO RUN:
+
+	cd bin/
+	./bin/NTU_sort –[IS|MS|QS|HS] <input_file_name> <output_file_name>
+	For example,
+	./bin/NTU_sort –MS inputs/1000.case1.in outputs/1000.case1.out
+======
+HOW TO VERIFY RESULT
+
+    cd utility/
+    ./PA1_Result_Checker <input_file> <result_file_name>
+	For example,
+	./PA1_Result_Checker ../output/5.case1.in ../output/5.case1.out
+
+OTHER NOTICE:
+1.沒有改任何設定，所有files的命名跟使用都跟PA1的說明一樣
+2.type "ulimit -s 262144" first before running large cases for Quick Sort.
+  因為Quick Sort在大的case會出現segmentation fault(core dumped)
+3.所有sorting都是參考課本pseudocode寫的
+4.report為.pdf
